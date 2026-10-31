@@ -27,7 +27,7 @@ Suchen mit: `grep -n '\[' index.html`
 
 | Platzhalter | Wo | Hinweis |
 |---|---|---|
-| `[Firmenname]` | Logo, Texte, Impressum, Datenschutz, Footer, `<title>`, Meta-Tags, JSON-LD, Formular-Betreff (`js/main.js`) | 13× in index.html |
+| `[Firmenname]` | Logo, Texte, Impressum, Datenschutz, Footer, `<title>`, Meta-Tags, JSON-LD | 13× in index.html |
 | `[Rechtsform]` | Impressum | z. B. Einzelunternehmen, GmbH |
 | `[Inhaber]` | Impressum, Datenschutz | Vor- und Nachname |
 | `[Telefon]` | Navigation, Hero-Button, Kontakt, Impressum, Datenschutz, JSON-LD | In `href="tel:[Telefon]"` im internationalen Format **ohne Leerzeichen** eintragen, z. B. `tel:+492223123456`; im sichtbaren Text gern lesbar formatiert |
