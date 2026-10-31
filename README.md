@@ -14,7 +14,9 @@ css/style.css           Handgeschriebenes CSS (mobile first)
 js/main.js              Navigation, Scrollspy, Einblend-Animationen, mailto-Anfrageformular
 fonts/                  Cormorant Garamond (SIL Open Font License), lokal eingebunden
 img/*.svg               Eigene Illustrationen (Hornissen, Nester, Hero)
-img/og-image.png        Vorschaubild für Social Media (1200×630)
+img/*.webp              Fotos (Wikimedia Commons, siehe „Bildnachweis“): hero-velutina(-1000), foto-velutina,
+                        foto-crabro, foto-nest-dach, foto-nest-baum
+img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit Hero-Foto)
 favicon.svg, favicon-32.png, apple-touch-icon.png
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
 tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt websocket-client)
@@ -61,7 +63,7 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261031b`, `js/main.js?v=20261031b`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261031c`, `js/main.js?v=20261031c`).
 Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101a`).
 
 ## Eigene Domain
@@ -76,7 +78,20 @@ keine Daten an die Website übertragen. Fotos hängt der Besucher selbst an.
 
 ## Bildnachweis
 
-Alle Illustrationen und Icons sind eigens erstellte SVGs (siehe `tools/make_svgs.py`). Schrift:
+Fotos von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Alle wurden zugeschnitten, verkleinert und
+als WebP gespeichert; bearbeitete CC-BY-SA-Fassungen stehen unter derselben Lizenz. Der Nachweis steht auch auf
+der Seite im Impressum unter „Bildnachweise“ (`#bildnachweise`) und als Kurzzeile an jedem Foto.
+**Wer ein Foto austauscht oder entfernt, muss den Nachweis an beiden Stellen anpassen.**
+
+| Datei | Verwendung | Original | Urheber | Lizenz |
+|---|---|---|---|---|
+| `img/hero-velutina.webp`, `img/hero-velutina-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau | [Frelon asiatique (Vespa velutina), Parc de Woluwe, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_asiatique_(Vespa_velutina),_Parc_de_Woluwe,_Bruxelles_(53565592503).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| `img/foto-velutina.webp` | Erkennen – Fotovergleich | [Asian hornet (Vespa velutina)](https://commons.wikimedia.org/wiki/File:Asian_hornet_(Vespa_velutina).jpg) | Charles J. Sharp | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| `img/foto-crabro.webp` | Erkennen – Fotovergleich | [Frelon européen (Vespa crabo), Parc de Woluwé, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_europ%C3%A9en_(Vespa_crabro),_Parc_de_Woluw%C3%A9,_Bruxelles_(51791202897).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| `img/foto-nest-dach.webp` | Nester – unter Primärnest | [Vespa vélutina](https://commons.wikimedia.org/wiki/File:Vespa_v%C3%A9lutina.jpg) | Francis Ithurburu | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| `img/foto-nest-baum.webp` | Nester – unter Sekundärnest | [Vespa velutina nid](https://commons.wikimedia.org/wiki/File:Vespa_velutina_nid.jpg) | Fredciel | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+
+Alle übrigen Illustrationen und Icons sind eigens erstellte SVGs (siehe `tools/make_svgs.py`). Schrift:
 Cormorant Garamond, SIL Open Font License, lokal gehostet. Keine externen Ressourcen, keine Cookies.
 
 ## Quellen der Fachinhalte (abgerufen 31.10.2026)
