@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img">
+<title>Primärnest unter einem Dachüberstand, Illustration</title>
+<defs><radialGradient id="p" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#d2ad84"/><stop offset=".7" stop-color="#93714f"/><stop offset="1" stop-color="#604836"/></radialGradient></defs>
+<path d="M0 40 L400 40 L400 64 L0 64 Z" fill="#3a332e"/><path d="M0 64 L400 64 L400 74 L0 74 Z" fill="#26211e"/>
+<g fill="#4a413a"><rect x="40" y="74" width="22" height="18"/><rect x="190" y="74" width="22" height="18"/><rect x="340" y="74" width="22" height="18"/></g>
+<path d="M200 92 L200 110" stroke="#7a5d43" stroke-width="5"/>
+<path d="M200 108 C 252 108 272 150 268 186 C 262 236 232 262 200 262 C 168 262 138 236 132 186 C 128 150 148 108 200 108 Z" fill="url(#p)"/>
+<g fill="none" stroke="#f1dcc0" stroke-opacity=".3" stroke-width="2"><path d="M144 150 C 180 140 220 140 256 150"/><path d="M134 186 C 180 176 220 176 266 186"/><path d="M140 222 C 180 212 220 212 260 222"/></g>
+<ellipse cx="200" cy="254" rx="12" ry="7" fill="#1c140e"/>
+<g fill="#1a1512"><ellipse cx="240" cy="284" rx="7" ry="3.5" transform="rotate(-25 240 284)"/></g>
+</svg>

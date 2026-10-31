@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img">
+<title>Sekundärnest hoch in einer Baumkrone, Illustration</title>
+<defs><radialGradient id="n" cx=".38" cy=".35" r=".75"><stop offset="0" stop-color="#c9a27a"/><stop offset=".7" stop-color="#8a6a4c"/><stop offset="1" stop-color="#5a4432"/></radialGradient></defs>
+<g fill="none" stroke="#3f4a33" stroke-linecap="round">
+<path d="M0 60 C 120 70 220 40 400 30" stroke-width="14"/><path d="M200 50 C 205 80 200 100 198 120" stroke-width="8"/>
+<path d="M60 64 C 40 20 20 10 0 6" stroke-width="6"/><path d="M300 40 C 340 80 370 90 400 96" stroke-width="6"/>
+</g>
+<g fill="#2f3b27" opacity=".9"><ellipse cx="70" cy="50" rx="40" ry="16" transform="rotate(-12 70 50)"/><ellipse cx="320" cy="30" rx="44" ry="15" transform="rotate(10 320 30)"/><ellipse cx="140" cy="76" rx="30" ry="11" transform="rotate(18 140 76)"/><ellipse cx="370" cy="86" rx="32" ry="12" transform="rotate(24 370 86)"/></g>
+<path d="M198 112 C 290 120 338 220 330 320 C 322 420 270 490 200 500 C 130 490 78 420 70 320 C 62 220 110 120 198 112 Z" fill="url(#n)"/>
+<g fill="none" stroke="#f1dcc0" stroke-opacity=".28" stroke-width="2.2">
+<path d="M96 200 C 150 186 250 186 304 200"/><path d="M80 250 C 150 234 250 234 320 250"/><path d="M72 300 C 150 284 250 284 328 300"/><path d="M72 350 C 150 334 250 334 328 350"/><path d="M80 400 C 150 386 250 386 320 400"/><path d="M98 448 C 150 436 250 436 302 448"/><path d="M128 160 C 170 150 230 150 272 160"/>
+</g>
+<g fill="none" stroke="#3b2c20" stroke-opacity=".35" stroke-width="1.6"><path d="M110 226 C 150 214 190 222 230 214"/><path d="M180 276 C 220 266 260 274 300 266"/><path d="M96 326 C 140 316 180 324 220 316"/><path d="M200 376 C 240 366 270 372 306 366"/></g>
+<ellipse cx="292" cy="318" rx="13" ry="16" fill="#1c140e"/>
+<g fill="#1a1512"><ellipse cx="318" cy="300" rx="7" ry="3.5" transform="rotate(-30 318 300)"/><ellipse cx="342" cy="282" rx="7" ry="3.5" transform="rotate(-20 342 282)"/></g>
+<g fill="#e9a53c"><rect x="315" y="300" width="4" height="3" transform="rotate(-30 318 300)"/><rect x="339" y="282" width="4" height="3" transform="rotate(-20 342 282)"/></g>
+</svg>

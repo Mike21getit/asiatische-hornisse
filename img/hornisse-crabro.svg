@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" role="img">
+<title>Europäische Hornisse (Vespa crabro), Illustration</title>
+<defs>
+<clipPath id="abd"><path d="M200 262 C 262 266 286 330 280 392 C 274 452 236 512 200 540 C 164 512 126 452 120 392 C 114 330 138 266 200 262 Z"/></clipPath>
+<radialGradient id="sh" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient>
+</defs>
+<path d="M230 175 L262 150 L280.6 124.0" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M280.6 124.0 L292 108" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M230 200 L270 222 L299.8 238.1" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M299.8 238.1 L318 248" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M230 225 L262 286 L285.6 326.9" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285.6 326.9 L300 352" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M170 175 L138 150 L119.4 124.0" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M119.4 124.0 L108 108" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M170 200 L130 222 L100.2 238.1" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100.2 238.1 L82 248" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M170 225 L138 286 L114.4 326.9" fill="none" stroke="#7a3519" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M114.4 326.9 L100 352" fill="none" stroke="#8a3e1d" stroke-width="7" stroke-linecap="round"/>
+<path d="M222 170 C 300 190 352 300 330 400 C 318 440 282 420 262 360 C 244 300 228 230 216 182 Z" fill="rgba(170,120,80,.26)" stroke="rgba(255,240,220,.35)" stroke-width="1.5"/>
+<path d="M220 190 C 268 220 300 290 300 350" fill="none" stroke="rgba(255,240,220,.22)" stroke-width="1.2"/>
+<path d="M222 196 C 270 240 282 300 268 330 C 258 300 240 250 218 206 Z" fill="rgba(170,120,80,.26)" stroke="rgba(255,240,220,.25)" stroke-width="1.2"/>
+<path d="M178 170 C 100 190 48 300 70 400 C 82 440 118 420 138 360 C 156 300 172 230 184 182 Z" fill="rgba(170,120,80,.26)" stroke="rgba(255,240,220,.35)" stroke-width="1.5"/>
+<path d="M180 190 C 132 220 100 290 100 350" fill="none" stroke="rgba(255,240,220,.22)" stroke-width="1.2"/>
+<path d="M178 196 C 130 240 118 300 132 330 C 142 300 160 250 182 206 Z" fill="rgba(170,120,80,.26)" stroke="rgba(255,240,220,.25)" stroke-width="1.2"/>
+<g clip-path="url(#abd)">
+<rect x="100" y="262" width="200" height="39" fill="#6b2d18"/>
+<rect x="100" y="300" width="200" height="37" fill="#e8c040"/>
+<path d="M100 300 H300 V308 C 262 308 250 315 236 319 C 222 315 214 309 200 309 C 186 309 178 315 164 319 C 150 315 138 308 100 308 Z" fill="#2a1a10"/>
+<rect x="100" y="336" width="200" height="37" fill="#e8c040"/>
+<path d="M100 336 H300 V344 C 262 344 250 351 236 355 C 222 351 214 345 200 345 C 186 345 178 351 164 355 C 150 351 138 344 100 344 Z" fill="#2a1a10"/>
+<rect x="100" y="372" width="200" height="39" fill="#e8c040"/>
+<path d="M100 372 H300 V380 C 262 380 250 388 236 392 C 222 388 214 382 200 382 C 186 382 178 388 164 392 C 150 388 138 380 100 380 Z" fill="#2a1a10"/>
+<rect x="100" y="410" width="200" height="43" fill="#e8c040"/>
+<path d="M100 410 H300 V419 C 262 419 250 428 236 432 C 222 428 214 421 200 421 C 186 421 178 428 164 432 C 150 428 138 419 100 419 Z" fill="#2a1a10"/>
+<rect x="100" y="452" width="200" height="89" fill="#e8c040"/>
+<path d="M100 452 H300 V470 C 262 470 250 489 236 498 C 222 489 214 474 200 474 C 186 474 178 489 164 498 C 150 489 138 470 100 470 Z" fill="#2a1a10"/>
+<rect x="100" y="262" width="200" height="280" fill="url(#sh)"/>
+</g>
+<ellipse cx="200" cy="256" rx="16" ry="12" fill="#5a2615"/>
+<ellipse cx="200" cy="198" rx="48" ry="62" fill="#5a2615"/>
+<path d="M170 170 C 185 158 215 158 230 170 C 222 200 178 200 170 170 Z" fill="#2a130b" opacity=".9"/>
+<path d="M168 214 C 180 232 220 232 232 214" fill="none" stroke="#c9832e" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+<ellipse cx="200" cy="198" rx="48" ry="62" fill="url(#sh)"/>
+<ellipse cx="200" cy="112" rx="42" ry="34" fill="#8a3b1f"/>
+<path d="M168 118 C 176 146 224 146 232 118 C 222 128 178 128 168 118 Z" fill="#e9c247"/>
+<path d="M180 128 C 190 150 210 150 220 128 C 212 136 188 136 180 128 Z" fill="#e9c247"/>
+<ellipse cx="233" cy="108" rx="13" ry="22" transform="rotate(-18 233 108)" fill="#0c0a09"/>
+<ellipse cx="230" cy="100" rx="4" ry="7" fill="#fff" opacity=".18"/>
+<ellipse cx="167" cy="108" rx="13" ry="22" transform="rotate(18 167 108)" fill="#0c0a09"/>
+<ellipse cx="170" cy="100" rx="4" ry="7" fill="#fff" opacity=".18"/>
+<ellipse cx="200" cy="112" rx="42" ry="34" fill="url(#sh)"/>
+<path d="M210 84 C 216 52 240 34 272 22" fill="none" stroke="#5a2a16" stroke-width="6" stroke-linecap="round"/>
+<path d="M210 84 C 214 66 220 56 226 48" fill="none" stroke="#c8902e" stroke-width="6" stroke-linecap="round"/>
+<path d="M190 84 C 184 52 160 34 128 22" fill="none" stroke="#5a2a16" stroke-width="6" stroke-linecap="round"/>
+<path d="M190 84 C 186 66 180 56 174 48" fill="none" stroke="#c8902e" stroke-width="6" stroke-linecap="round"/>
+</svg>
