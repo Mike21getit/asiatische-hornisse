@@ -22,7 +22,7 @@ try:
             m = json.loads(ws.recv())
             if m.get('id') == n[0]: return m.get('result', {})
     vh = 844 if mobile else 900
-    call('Emulation.setDeviceMetricsOverride', width=width, height=vh, deviceScaleFactor=2 if mobile else 1, mobile=mobile)
+    call('Emulation.setDeviceMetricsOverride', width=width, height=vh, deviceScaleFactor=1, mobile=mobile)
     call('Page.enable')
     call('Page.navigate', url=url)
     time.sleep(4)
