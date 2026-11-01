@@ -90,8 +90,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101k`, `js/main.js?v=20261101k`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101l`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101m`, `js/main.js?v=20261101m`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101n`).
 
 ## Eigene Domain
 
@@ -181,3 +181,9 @@ Videos werden mit `object-fit: contain` angezeigt, im Vollbild (`:fullscreen`) e
 In `index.html` im Hero-`<img>`: `hero-velutina` → `hero-start`, `width="2000" height="1334"`, `sizes="(min-width: 900px) 60vw, 330vw"`,
 Alt-Text „Foto eines großen Nests der Asiatischen Hornisse mit geschwungen gemusterter Papierhülle; auf der Hülle sitzen Asiatische Hornissen, rechts unscharfer grüner Hintergrund“.
 In `css/style.css`: Desktop `.hero-img { object-position: 44% 50%; }`, Mobil `object-position: 47% 50%`. Danach `?v=` erhöhen.
+
+## Anrufen-Auswahl
+
+Der Header-Link „Anrufen“ und der Hero-Button öffnen per JS eine Standortauswahl (`#call-chooser`) mit allen vier Rufnummern
+(Desktop: Popover, Mobil ≤ 640 px: Bottom-Sheet; schließt bei Escape, Klick außerhalb oder ✕). Ohne JavaScript führen beide zu `#standorte`.
+Telefonische Erreichbarkeit: 08:30 – 18:00 Uhr (Kontaktbereich und Auswahl).
