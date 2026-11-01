@@ -565,7 +565,10 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
 .case-video figcaption { margin-top: .6rem; font-size: .85rem; line-height: 1.45; color: var(--muted); }
 .case-video figcaption strong { color: var(--text); font-weight: 500; }
 .case-note { grid-column: 1 / -1; margin: -0.5rem 0 0; text-align: right; font-size: .72rem; letter-spacing: .04em; color: var(--muted); opacity: .75; }
-@media (max-width: 1000px) { .case { grid-template-columns: 1fr; } }
+.case-videos--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 40rem; width: 100%; justify-self: center; }
+.case--single { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+.case-videos--single { grid-template-columns: 1fr; max-width: 21rem; width: 100%; justify-self: center; }
+@media (max-width: 1000px) { .case, .case--single { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .case-videos { grid-template-columns: 1fr; max-width: 22rem; margin: 0 auto; width: 100%; } .case-note { text-align: center; } }
 
 /* Galerie „Aus unseren Einsätzen“ */

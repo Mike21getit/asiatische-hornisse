@@ -18,7 +18,7 @@ img/hero-vespa-solo*.webp  Startbild (eigenes Foto, 2000 + 1000 px, quadratisch)
 img/foto-crabro.webp    Einziges verbliebenes Fremdfoto (Wikimedia Commons, siehe „Bildnachweis“)
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
 video/*.mp4             Eigene Videos (H.264, 720×1280, ohne Ton, Metadaten entfernt):
-                        nest-badezimmer, nest-badezimmer-flugloch, nest-dachueberstand
+                        nest-badezimmer, nest-badezimmer-flugloch, nest-fensterrahmen
 img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit eigenem Hero-Foto vespa-solo)
 favicon.svg, favicon-32.png, apple-touch-icon.png
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
@@ -65,8 +65,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101c`, `js/main.js?v=20261101c`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101d`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101d`, `js/main.js?v=20261101d`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101e`).
 
 ## Eigene Domain
 
@@ -91,7 +91,7 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-waben-hornissen(-800).webp` | Galerie – Hornissen auf einer Wabe | Wabe.jpg |
 | `img/eigen-waben-puppen(-800).webp` | Galerie – geöffnete Wabenetagen mit verdeckelten Zellen | Wabe-2.jpg |
 | `img/eigen-nest-fenster(-800).webp` | Galerie – Nest in einer Fensterlaibung | IMG_5958 2.JPG |
-| `img/eigen-nest-dachueberstand(-800).webp` | Nester – Fotopaar links (ersetzt Stockfoto Ithurburu) | IMG_9848 2.JPG |
+| `img/eigen-nest-fensterrahmen(-800).webp` | Nester – Fotopaar links: Sekundärnest an einem Fensterrahmen (dasselbe Nest wie im Video `nest-fensterrahmen`; ersetzt Stockfoto Ithurburu) | IMG_9848 2.JPG |
 | `img/eigen-nest-baumkrone(-800).webp` | Nester – Fotopaar rechts | IMG_6398 2.JPG |
 | `img/eigen-nest-badezimmer(-800).webp` | Galerie – Nest an der Duschvorhangstange im Badezimmer | IMG_0266.jpg |
 | `img/eigen-hornissen-nahaufnahme(-800).webp` | Galerie – Arbeiterinnen auf der Nesthülle | IMG_0275.jpg |
@@ -100,9 +100,9 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-waben-boden(-800).webp` | Galerie – Wabenetagen am Boden | IMG_6401.JPG |
 | `img/eigen-hornissen-am-nest(-800).webp` | Ablauf – Fotoplatz 1 | IMG_0275.jpg (16:9-Ausschnitt) |
 | `img/eigen-flugloch(-800).webp` | Ablauf – Fotoplatz 2 | vespa-01.jpg |
-| `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block, Video 1 (18 s, 3,5 MB) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
-| `video/nest-badezimmer-flugloch.mp4` + `img/eigen-video2-poster.webp` | Praxis-Block, Video 2 (47 s, 6,5 MB) | 1080p_Match_Framerate.MP4 |
-| `video/nest-dachueberstand.mp4` + `img/eigen-video3-poster.webp` | Praxis-Block, Video 3 (19 s, 5,9 MB) | Automatic-03.MP4 (bearbeitete Fassung von IMG_9853.MP4) |
+| `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 1 (18 s, 3,5 MB) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
+| `video/nest-badezimmer-flugloch.mp4` + `img/eigen-video2-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 2 (47 s, 6,5 MB) | 1080p_Match_Framerate.MP4 |
+| `video/nest-fensterrahmen.mp4` + `img/eigen-video-fensterrahmen-poster.webp` | Rubrik „Sekundärnest“ (`#sekundaernest`, in der Navigation), Sekundärnest an einem Fensterrahmen (19 s, 5,9 MB) | Automatic-03.MP4 (bearbeitete Fassung von IMG_9853.MP4) |
 
 Die Galerie nutzt die Lightbox der Fotografie-Seite (Tastatur ←/→/Esc, Wischen auf Touch-Geräten); neue Bilder
 einfach als weiteres `<li class="g-item">` in `#gallery` ergänzen (`href` = große Datei, `data-w`/`data-h`/`data-caption`).
