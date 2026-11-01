@@ -14,12 +14,13 @@ css/style.css           Handgeschriebenes CSS (mobile first)
 js/main.js              Navigation, Scrollspy, Einblend-Animationen, mailto-Anfrageformular
 fonts/                  Cormorant Garamond (SIL Open Font License), lokal eingebunden
 img/*.svg               Eigene Illustrationen (Hornissen, Nester, Hero)
-img/hero-vespa-solo*.webp  Startbild (eigenes Foto, 2000 + 1000 px, quadratisch)
+img/hero-start*.webp    Startbild (eigenes Foto „start“, 2000 + 1000 px, 3:2)
+img/hero-vespa-solo*.webp  Foto neben der Zeichnung der Asiatischen Hornisse (Erkennen), 2000 + 1000 px
 img/foto-crabro.webp    Einziges verbliebenes Fremdfoto (Wikimedia Commons, siehe „Bildnachweis“)
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
-video/*.mp4             Eigene Videos (H.264, 720×1280, ohne Ton, Metadaten entfernt):
+video/*.mp4             Eigene Videos (H.264 High, 1080×1920, CRF 21/24, faststart, ohne Ton, Metadaten entfernt):
                         nest-badezimmer, nest-badezimmer-flugloch, nest-fensterrahmen
-img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit eigenem Hero-Foto vespa-solo)
+img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit eigenem Hero-Foto „start“)
 favicon.svg, favicon-32.png, apple-touch-icon.png
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
 tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt websocket-client)
@@ -65,8 +66,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101d`, `js/main.js?v=20261101d`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101e`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101e`, `js/main.js?v=20261101e`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101f`).
 
 ## Eigene Domain
 
@@ -85,7 +86,8 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 
 | Datei | Verwendung | Original (Drive „Vespa Velutina“) |
 |---|---|---|
-| `img/hero-vespa-solo.webp`, `img/hero-vespa-solo-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau (ersetzt Stockfoto Vassen) | vespa-solo.jpg |
+| `img/hero-start.webp`, `img/hero-start-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau | start.jpg |
+| `img/hero-vespa-solo.webp`, `img/hero-vespa-solo-1000.webp` | Erkennen – Foto rechts neben der Zeichnung der Asiatischen Hornisse (bis 01.11.2026 Startbild) | vespa-solo.jpg |
 | `img/eigen-velutina.webp` | Erkennen – Fotovergleich Asiatische Hornisse (Ausschnitt, ersetzt Stockfoto Sharp) | velutina-01.jpg |
 | `img/eigen-velutina-nest(-800).webp` | Galerie – Asiatische Hornissen auf der Nesthülle | velutina-01.jpg |
 | `img/eigen-waben-hornissen(-800).webp` | Galerie – Hornissen auf einer Wabe | Wabe.jpg |
@@ -100,9 +102,9 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-waben-boden(-800).webp` | Galerie – Wabenetagen am Boden | IMG_6401.JPG |
 | `img/eigen-hornissen-am-nest(-800).webp` | Ablauf – Fotoplatz 1 | IMG_0275.jpg (16:9-Ausschnitt) |
 | `img/eigen-flugloch(-800).webp` | Ablauf – Fotoplatz 2 | vespa-01.jpg |
-| `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 1 (18 s, 3,5 MB) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
-| `video/nest-badezimmer-flugloch.mp4` + `img/eigen-video2-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 2 (47 s, 6,5 MB) | 1080p_Match_Framerate.MP4 |
-| `video/nest-fensterrahmen.mp4` + `img/eigen-video-fensterrahmen-poster.webp` | Rubrik „Sekundärnest“ (`#sekundaernest`, in der Navigation), Sekundärnest an einem Fensterrahmen (19 s, 5,9 MB) | Automatic-03.MP4 (bearbeitete Fassung von IMG_9853.MP4) |
+| `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 1 (18 s, 1080×1920, 10,9 MB, CRF 21) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
+| `video/nest-badezimmer-flugloch.mp4` + `img/eigen-video2-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 2 (47 s, 1080×1920, 19,4 MB, CRF 24) | 1080p_Match_Framerate.MP4 |
+| `video/nest-fensterrahmen.mp4` + `img/eigen-video-fensterrahmen-poster.webp` | Rubrik „Sekundärnest“ (`#sekundaernest`, in der Navigation), Sekundärnest an einem Fensterrahmen (19 s, 1080×1920, 16,7 MB, CRF 21) | Automatic-03.MP4 (bearbeitete Fassung von IMG_9853.MP4) |
 
 Die Galerie nutzt die Lightbox der Fotografie-Seite (Tastatur ←/→/Esc, Wischen auf Touch-Geräten); neue Bilder
 einfach als weiteres `<li class="g-item">` in `#gallery` ergänzen (`href` = große Datei, `data-w`/`data-h`/`data-caption`).
@@ -130,3 +132,13 @@ Cormorant Garamond, SIL Open Font License, lokal gehostet. Keine externen Ressou
 - Verordnung (EU) Nr. 1143/2014: https://eur-lex.europa.eu/eli/reg/2014/1143/oj
 
 Rechtliche Hinweise und Meldewege regelmäßig prüfen – sie können sich ändern (Stand im Text: Oktober 2026).
+
+### Videos neu kodieren
+
+Aus den Originalen (IMG_0270 und Automatic-03 in 2160×3840, 1080p_Match_Framerate in 1080×1920):
+
+    ffmpeg -i ORIGINAL.MP4 -map 0:v:0 -an -map_metadata -1 -map_chapters -1 \
+      -vf "scale='min(1080,iw)':-2:flags=lanczos,format=yuv420p" \
+      -c:v libx264 -profile:v high -preset slow -crf 21 -tune film -movflags +faststart ZIEL.mp4
+
+Videos werden mit `object-fit: contain` angezeigt, im Vollbild (`:fullscreen`) ebenfalls – so wird nie ein Ausschnitt abgeschnitten.
