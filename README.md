@@ -14,7 +14,9 @@ css/style.css           Handgeschriebenes CSS (mobile first)
 js/main.js              Navigation, Scrollspy, Einblend-Animationen, mailto-Anfrageformular
 fonts/                  Cormorant Garamond (SIL Open Font License), lokal eingebunden
 img/*.svg               Eigene Illustrationen (Hornissen, Nester, Hero)
-img/hero-start*.webp    Startbild (eigenes Foto „start“, 2000 + 1000 px, 3:2)
+img/hero-velutina*.webp Startbild – TEST seit 01.11.2026 (eigenes Foto „velutina-01“, 2000 + 1000 px, quadratisch)
+img/hero-start*.webp    Bisheriges Startbild „start“ (2000 + 1000 px, 3:2) – bleibt für schnellen Rücktausch im Repo
+img/erkennen-crabro*.webp  Bild neben der Zeichnung der Europäischen Hornisse (Erkennen), KI-generiert (Drive „Vespa Crabo.JPG“), 1152 + 800 px
 img/hero-vespa-solo*.webp  Foto neben der Zeichnung der Asiatischen Hornisse (Erkennen), 2000 + 1000 px
 img/foto-crabro.webp    Einziges verbliebenes Fremdfoto (Wikimedia Commons, siehe „Bildnachweis“)
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
@@ -66,8 +68,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101e`, `js/main.js?v=20261101e`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101f`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101f`, `js/main.js?v=20261101f`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101g`).
 
 ## Eigene Domain
 
@@ -86,7 +88,9 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 
 | Datei | Verwendung | Original (Drive „Vespa Velutina“) |
 |---|---|---|
-| `img/hero-start.webp`, `img/hero-start-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau | start.jpg |
+| `img/hero-velutina.webp`, `img/hero-velutina-1000.webp` | Startbild (TEST) | velutina-01.jpg |
+| `img/hero-start.webp`, `img/hero-start-1000.webp`, `img/og-image.jpg` | Bisheriges Startbild (Reserve), Social-Media-Vorschau (weiterhin aus „start“) | start.jpg |
+| `img/erkennen-crabro.webp`, `img/erkennen-crabro-800.webp` | Erkennen – Bild neben der Zeichnung der Europäischen Hornisse; **KI-generiert** (Bildsignatur in den Metadaten), daher als „KI-generierte Darstellung“ gekennzeichnet und **nicht** im Fotovergleich verwendet | Vespa Crabo.JPG |
 | `img/hero-vespa-solo.webp`, `img/hero-vespa-solo-1000.webp` | Erkennen – Foto rechts neben der Zeichnung der Asiatischen Hornisse (bis 01.11.2026 Startbild) | vespa-solo.jpg |
 | `img/eigen-velutina.webp` | Erkennen – Fotovergleich Asiatische Hornisse (Ausschnitt, ersetzt Stockfoto Sharp) | velutina-01.jpg |
 | `img/eigen-velutina-nest(-800).webp` | Galerie – Asiatische Hornissen auf der Nesthülle | velutina-01.jpg |
@@ -142,3 +146,9 @@ Aus den Originalen (IMG_0270 und Automatic-03 in 2160×3840, 1080p_Match_Framera
       -c:v libx264 -profile:v high -preset slow -crf 21 -tune film -movflags +faststart ZIEL.mp4
 
 Videos werden mit `object-fit: contain` angezeigt, im Vollbild (`:fullscreen`) ebenfalls – so wird nie ein Ausschnitt abgeschnitten.
+
+### Startbild zurück auf „start“
+
+In `index.html` im Hero-`<img>`: `hero-velutina` → `hero-start`, `width="2000" height="1334"`, `sizes="(min-width: 900px) 60vw, 330vw"`,
+Alt-Text „Foto eines großen Nests der Asiatischen Hornisse mit geschwungen gemusterter Papierhülle; auf der Hülle sitzen Asiatische Hornissen, rechts unscharfer grüner Hintergrund“.
+In `css/style.css`: Desktop `.hero-img { object-position: 44% 50%; }`, Mobil `object-position: 47% 50%`. Danach `?v=` erhöhen.
