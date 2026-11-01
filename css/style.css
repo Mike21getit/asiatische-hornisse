@@ -716,3 +716,16 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
 .cert-hint { color: var(--accent); opacity: 1; }
 @media (max-width: 480px) { .cert { grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; } }
 .lightbox.is-single .lb-prev, .lightbox.is-single .lb-next { display: none; }
+
+/* Ungewöhnlicher Fundort: Giraffen-Skulptur (Sekundärnest) */
+.case-extra { grid-column: 1 / -1; margin-top: clamp(1rem, 2vw, 1.5rem); padding-top: clamp(1.5rem, 3vw, 2.2rem); border-top: 1px solid var(--line); }
+.case-extra > p:not(.eyebrow) { color: var(--muted); line-height: 1.7; max-width: 46rem; margin: .4rem 0 1.4rem; }
+.case-photos { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 3fr); gap: clamp(.75rem, 1.5vw, 1.2rem); align-items: start; }
+.case-photo { margin: 0; }
+.case-photo a { display: block; overflow: hidden; border: 1px solid var(--line); transition: border-color .35s; }
+.case-photo a:hover, .case-photo a:focus-visible { border-color: var(--accent); }
+.case-photo img { display: block; width: 100%; height: auto; transition: transform .6s var(--ease, ease); }
+.case-photo a:hover img { transform: scale(1.03); }
+.case-photo figcaption { margin-top: .6rem; font-size: .85rem; line-height: 1.45; color: var(--muted); }
+.case-photo figcaption strong { color: var(--text); font-weight: 500; }
+@media (max-width: 640px) { .case-photos { grid-template-columns: 1fr; } }
