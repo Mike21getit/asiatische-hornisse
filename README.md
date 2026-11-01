@@ -34,8 +34,10 @@ tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt web
 | Feld | Wert | Wo |
 |---|---|---|
 | Firmenname / Rechtsform | Falkner Schädlingsbekämpfung GmbH | Header-Logo (aria-label), Texte, Impressum, Datenschutz, Footer, `<title>`, Meta/OG, JSON-LD, Bildnachweise |
-| Standort Bonn | 53225 Bonn · 0228 4336945 (`tel:+492284336945`) | Navigation, Hero, Kontakt, Impressum, Datenschutz, JSON-LD |
-| Standort Mannheim | Neuhofer Straße 15, 68219 Mannheim · 0621 72492117 (`tel:+4962172492117`) | Hero, Kontakt, Impressum (Anschrift), Datenschutz (Verantwortlicher), JSON-LD |
+| Hauptsitz Bonn | Heinrich-Heine-Str. 41, 53225 Bonn · 0228 4336945 (`tel:+492284336945`) | Navigation, Hero („Anrufen Bonn“), Kontakt, Impressum, Datenschutz, JSON-LD |
+| Standort Königswinter | Am Lindenbaum 14, 53639 Königswinter · 02244 8732038 (`tel:+4922448732038`) | Kontakt, Impressum, Datenschutz, JSON-LD |
+| Standort Mannheim | Neuhofer Straße 15, 68219 Mannheim · 0621 72492117 (`tel:+4962172492117`) | Kontakt, Impressum, Datenschutz, JSON-LD |
+| Standort Reilingen | Erich-Kästner-Ring 13, 68799 Reilingen · 06205 202135 (`tel:+496205202135`) | Kontakt, Impressum, Datenschutz, JSON-LD |
 | E-Mail | mail@falkner-sbk.de | Kontakt, Formular (`data-mailto`/`action`), Impressum, Datenschutz, JSON-LD |
 | Hauptwebsite | https://www.falkner-sbk.de | Mobile-Menü, Über uns, Kontakt, Impressum, Footer, JSON-LD `sameAs` |
 | Sitz / Register | Sitz Bonn · Amtsgericht Bonn, HRB 16142 | Impressum |
@@ -52,7 +54,6 @@ Suchen mit: `grep -n 'class="ph"' index.html`
 
 | Platzhalter | Wo | Hinweis |
 |---|---|---|
-| `[Straße Hausnummer]` (Bonn) | Impressum (Anschrift + § 18 MStV), Datenschutz (Verantwortlicher) | Straße des Sitzes in Bonn – folgt von Michael |
 | `[Name und Sitz des Versicherers …]` | Impressum (Berufshaftpflicht) | nur falls Pflicht/gewünscht |
 | `[Sachkunde / Zertifikate]` | Über uns | |
 | `[Kurzer Text zu Erfahrung und Qualifikation …]` | Über uns | Geschäftsführer-Satz ist bereits eingetragen |
@@ -89,8 +90,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101h`, `js/main.js?v=20261101h`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101i`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101i`, `js/main.js?v=20261101i`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101j`).
 
 ## Eigene Domain
 
