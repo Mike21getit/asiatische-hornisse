@@ -90,7 +90,7 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101m`, `js/main.js?v=20261101m`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101n`, `js/main.js?v=20261101n`).
 Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101n`).
 
 ## Eigene Domain

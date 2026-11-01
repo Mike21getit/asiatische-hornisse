@@ -83,15 +83,20 @@
 
   /* ---------- Lightbox für die Galerie (angepasst von der Fotografie-Seite) ---------- */
   (function () {
-    var box = $('#lightbox'), links = $$('#gallery a');
+    var box = $('#lightbox'), links = $$('#gallery a, a[data-lb]');
     if (!box || !links.length) return;
+    var groups = {};
+    links.forEach(function (a) { var g = a.dataset.lb || 'gallery'; (groups[g] = groups[g] || []).push(a); });
     var img = $('.lb-img', box), counter = $('.lb-counter', box), title = $('.lb-title', box);
     var btnClose = $('.lb-close', box), btnPrev = $('.lb-prev', box), btnNext = $('.lb-next', box);
     var index = 0, opener = null, token = 0, cache = {};
-    var list = links.map(function (a) {
+    function toItem(a) {
       var t = $('img', a);
       return { src: a.getAttribute('href'), w: +a.dataset.w, h: +a.dataset.h, cap: a.dataset.caption || '', alt: t ? t.alt : '' };
-    });
+    }
+    var lists = {};
+    Object.keys(groups).forEach(function (g) { lists[g] = groups[g].map(toItem); });
+    var list = lists.gallery || lists[Object.keys(lists)[0]];
     function preload(i) {
       var it = list[(i + list.length) % list.length];
       if (cache[it.src]) return;
@@ -125,10 +130,13 @@
       setTimeout(function () { box.hidden = true; img.removeAttribute('src'); }, 300);
       if (opener) opener.focus({ preventScroll: true });
     }
-    links.forEach(function (a, i) {
+    links.forEach(function (a) {
+      var g = a.dataset.lb || 'gallery', i = groups[g].indexOf(a);
       a.addEventListener('click', function (e) {
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
-        e.preventDefault(); open(i, a);
+        e.preventDefault(); list = lists[g];
+        box.classList.toggle('is-single', list.length < 2);
+        open(i, a);
       });
     });
     btnClose.addEventListener('click', close);
@@ -141,7 +149,7 @@
       else if (e.key === 'ArrowLeft') { e.preventDefault(); show(index - 1); }
       else if (e.key === 'ArrowRight') { e.preventDefault(); show(index + 1); }
       else if (e.key === 'Tab') {
-        var f = [btnClose, btnPrev, btnNext], pos = f.indexOf(document.activeElement);
+        var f = list.length < 2 ? [btnClose] : [btnClose, btnPrev, btnNext], pos = f.indexOf(document.activeElement);
         e.preventDefault(); f[(pos + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
       }
     });

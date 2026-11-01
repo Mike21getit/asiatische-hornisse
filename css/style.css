@@ -695,3 +695,24 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
 .call-chooser.is-sheet .call-head::before { content: ""; position: absolute; left: 50%; top: .5rem; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: rgba(255,255,255,.2); }
 .call-chooser.is-sheet .call-list a { min-height: 60px; font-size: 1.05rem; }
 @media (prefers-reduced-motion: reduce) { .call-chooser, .call-backdrop { transition: none; } }
+
+/* Ausrüstung (Teleskopstange, Schutzanzug) */
+.equip-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.equip-item { position: relative; display: block; overflow: hidden; border: 1px solid var(--line, rgba(255,255,255,.08)); background: var(--bg-3); }
+.equip-item--light { background: #fff; }
+.photo .equip-item img { aspect-ratio: 8 / 9; object-fit: cover; border: 0; transition: transform .6s var(--ease, ease); }
+.photo .equip-item--light img { object-fit: contain; padding: 6%; box-sizing: border-box; background: #fff; }
+.equip-item:hover img, .equip-item:focus-visible img { transform: scale(1.03); }
+.equip-label { position: absolute; left: .6rem; bottom: .6rem; padding: .35rem .6rem; background: rgba(10,10,11,.8); color: var(--accent); font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; line-height: 1.2; max-width: calc(100% - 1.2rem); }
+
+/* Sachkundenachweis */
+.cert { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1.4rem; align-items: center; margin: 2rem 0 0; }
+.cert a { display: block; position: relative; border: 1px solid var(--accent-soft); background: #fff; box-shadow: 0 14px 28px rgba(0,0,0,.45); transition: transform .35s var(--ease, ease), border-color .35s; }
+.cert a:hover, .cert a:focus-visible { transform: translateY(-3px) rotate(-1deg); border-color: var(--accent); }
+.cert img { display: block; width: 100%; height: auto; }
+.cert figcaption { font-size: .9rem; color: var(--muted); line-height: 1.55; }
+.cert figcaption strong { display: block; margin-bottom: .25rem; color: var(--text); font-weight: 500; font-size: .68rem; letter-spacing: .26em; text-transform: uppercase; }
+.cert-note, .cert-hint { display: block; margin-top: .35rem; font-size: .74rem; opacity: .8; }
+.cert-hint { color: var(--accent); opacity: 1; }
+@media (max-width: 480px) { .cert { grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; } }
+.lightbox.is-single .lb-prev, .lightbox.is-single .lb-next { display: none; }
