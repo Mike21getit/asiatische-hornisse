@@ -615,3 +615,29 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
   .lb-caption { bottom: max(4.2rem, calc(env(safe-area-inset-bottom) + 3.6rem)); }
   .lb-stage { padding-bottom: 7.5rem; }
 }
+
+/* ---------- Logo & Standorte (01.11.2026) ---------- */
+.brand { flex-direction: row; align-items: center; gap: .9rem; }
+.brand-logo { display: block; height: 46px; width: auto; }
+.brand .brand-sub { margin-top: .9rem; }
+@media (max-width: 640px) { .brand-logo { height: 38px; } .brand .brand-sub { display: none; } }
+.footer-brand { display: flex; align-items: center; gap: 1rem; }
+.footer-logo { display: block; height: 40px; width: auto; }
+.footer-brand span { font-size: 1.05rem; }
+.locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1.6rem; }
+@media (max-width: 480px) { .locations { grid-template-columns: 1fr; } }
+.location { padding: 1.2rem 1.25rem 1.1rem; border: 1px solid var(--line); background: rgba(255,255,255,.02); }
+.location-name { margin: 0 0 .5rem; font-family: var(--sans); font-size: .68rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
+.location-addr { margin: 0 0 .9rem; color: rgba(236,231,224,.82); line-height: 1.45; }
+.location-tel { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--serif); font-size: clamp(1.35rem, 2.4vw, 1.65rem); font-weight: 300; border-bottom: 1px solid var(--accent-soft); padding-bottom: .2rem; transition: color .3s, border-color .3s; white-space: nowrap; }
+.location-tel svg { color: var(--accent); flex: none; }
+.location-tel:hover { color: var(--accent); border-color: var(--accent); }
+.location-area { margin: .8rem 0 0; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+.contact-web { margin: 1.1rem 0 0; }
+.contact-web a { color: var(--muted); border-bottom: 1px solid var(--line); font-size: .9rem; letter-spacing: .06em; }
+.contact-web a:hover { color: var(--text); border-color: var(--accent); }
+.legal a[href^="tel:"], .legal a[href^="mailto:"] { white-space: nowrap; }
+.brand-logo { height: 52px; }
+.brand .brand-sub { display: none; }
+@media (min-width: 1500px) { .brand .brand-sub { display: block; } }
+@media (max-width: 640px) { .brand-logo { height: 42px; } }

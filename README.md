@@ -1,4 +1,4 @@
-# Asiatische Hornisse – Website (Schädlingsbekämpfung, Köln/Bonn/Rhein-Sieg)
+# Asiatische Hornisse – Website der Falkner Schädlingsbekämpfung GmbH (Bonn/Köln/Rhein-Sieg · Mannheim/Rhein-Neckar)
 
 Statische One-Page-Website (HTML/CSS/JS, kein Framework, kein Backend) zur Entfernung von Nestern der
 Asiatischen Hornisse (*Vespa velutina*). Layout und Typografie basieren auf der Fotografie-Website
@@ -23,27 +23,38 @@ img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante)
 video/*.mp4             Eigene Videos (H.264 High, 1080×1920, CRF 21/24, faststart, ohne Ton, Metadaten entfernt):
                         nest-badezimmer, nest-badezimmer-flugloch, nest-fensterrahmen
 img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit eigenem Hero-Foto „start“)
-favicon.svg, favicon-32.png, apple-touch-icon.png
+favicon.ico, favicon-32.png, apple-touch-icon.png (Grasmarke aus dem Logo; favicon.svg alt, nicht eingebunden)
+img/logo/               Firmenlogo: Original-JPG + transparente PNG/WebP (hochkant/quer, original/hell), Icons
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
 tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt websocket-client)
 ```
 
-## Platzhalter – bitte ersetzen
+## Firmendaten (eingetragen am 01.11.2026)
+
+| Feld | Wert | Wo |
+|---|---|---|
+| Firmenname / Rechtsform | Falkner Schädlingsbekämpfung GmbH | Header-Logo (aria-label), Texte, Impressum, Datenschutz, Footer, `<title>`, Meta/OG, JSON-LD, Bildnachweise |
+| Standort Bonn | 53225 Bonn · 0228 4336945 (`tel:+492284336945`) | Navigation, Hero, Kontakt, Impressum, Datenschutz, JSON-LD |
+| Standort Mannheim | Neuhofer Straße 15, 68219 Mannheim · 0621 72492117 (`tel:+4962172492117`) | Hero, Kontakt, Impressum (Anschrift), Datenschutz (Verantwortlicher), JSON-LD |
+| E-Mail | mail@falkner-sbk.de | Kontakt, Formular (`data-mailto`/`action`), Impressum, Datenschutz, JSON-LD |
+| Hauptwebsite | https://www.falkner-sbk.de | Mobile-Menü, Über uns, Kontakt, Impressum, Footer, JSON-LD `sameAs` |
+| Einsatzgebiet | Region Bonn / Rhein-Sieg / Köln und Region Mannheim / Rhein-Neckar | Leistungen, Über uns, Kontakt, Footer, JSON-LD `areaServed` – **bitte bestätigen** |
+
+Hinweis: `img/og-image.jpg` enthält noch den eingebrannten Text „KÖLN · BONN · RHEIN-SIEG“ (ohne Mannheim).
+
+## Platzhalter – noch offen
 
 Alle Platzhalter stehen in **eckigen Klammern** und sind auf der Seite orange markiert (Klasse `ph`).
-Suchen mit: `grep -n '\[' index.html`
+Suchen mit: `grep -n 'class="ph"' index.html`
 
 | Platzhalter | Wo | Hinweis |
 |---|---|---|
-| `[Firmenname]` | Logo, Texte, Impressum, Datenschutz, Footer, `<title>`, Meta-Tags, JSON-LD | 13× in index.html |
-| `[Rechtsform]` | Impressum | z. B. Einzelunternehmen, GmbH |
-| `[Inhaber]` | Impressum, Datenschutz | Vor- und Nachname |
-| `[Telefon]` | Navigation, Hero-Button, Kontakt, Impressum, Datenschutz, JSON-LD | In `href="tel:[Telefon]"` im internationalen Format **ohne Leerzeichen** eintragen, z. B. `tel:+492223123456`; im sichtbaren Text gern lesbar formatiert |
-| `[E-Mail]` | Kontakt, Impressum, Datenschutz, `href="mailto:[E-Mail]"`, `data-mailto="[E-Mail]"` am Formular, JSON-LD | Möglicherweise `mail@falkner-sbk.de` – **nicht verifiziert, bitte prüfen** |
-| `[Straße Hausnummer]`, `[PLZ Ort]` | Impressum, Datenschutz, Über uns, JSON-LD | |
-| `[Einsatzgebiet]` | Leistungen, Über uns, Kontakt, JSON-LD (`areaServed`) | z. B. „Königswinter, Bonn, Köln, Rhein-Sieg-Kreis“ |
-| `[USt-IdNr. …]` | Impressum | sonst Abschnitt löschen |
-| `[Handelsregister, … Handwerksrolle …]` | Impressum | nur falls zutreffend |
+| `[Sitz der Gesellschaft bitte bestätigen …]` | Impressum | Anschrift ist vorläufig Mannheim; laut Handelsregister prüfen |
+| `[Geschäftsführer]` | Impressum (Vertreten durch), Datenschutz | Vor- und Nachname laut Handelsregister |
+| `[Geschäftsführer / verantwortliche Person]` | Impressum (§ 18 Abs. 2 MStV) | |
+| `[Registergericht …]`, `[HRB-Nummer]` | Impressum (Registereintrag) | Pflichtangabe für GmbH |
+| `[USt-IdNr.]` | Impressum | falls vorhanden |
+| `[je nach Sitz … LfDI BW … oder LDI NRW …]` | Datenschutz, Abschnitt Ihre Rechte | zuständige Aufsichtsbehörde nach Sitz wählen |
 | `[Name und Sitz des Versicherers …]` | Impressum (Berufshaftpflicht) | nur falls Pflicht/gewünscht |
 | `[Sachkunde / Zertifikate]` | Über uns | |
 | `[Kurzer Text zu Inhaber …]` | Über uns | |
@@ -52,9 +63,21 @@ Suchen mit: `grep -n '\[' index.html`
 | `[Bitte an die tatsächliche Praxis anpassen]` | Datenschutz, Abschnitt 5 | |
 | `[FOTO 3]`, `[FOTO INHABER]` | Ablauf, Über uns | siehe unten (FOTO 1 + 2 sind mit eigenen Fotos belegt) |
 
-Platzhalter in Attributen und Kopfbereich nicht vergessen: `<title>`, `meta description`, Open-Graph-Tags,
-JSON-LD (`<script type="application/ld+json">`), `tel:`/`mailto:`-Links, `data-mailto` am Formular.
 Nach dem Ersetzen die Klasse `ph` am jeweiligen `<span>` entfernen (sonst bleibt der Text orange unterstrichen).
+
+## Logo
+
+Original: `img/logo/falkner-logo-original.jpg` (185×599, hochkant, weißer Hintergrund). Daraus freigestellt (transparent):
+
+| Datei | Verwendung |
+|---|---|
+| `img/logo/falkner-logo-horizontal-light.(webp\|png)` | Header (52 px hoch, mobil 42 px) und Footer – helle Variante für den dunklen Hintergrund, 90° im Uhrzeigersinn gedreht |
+| `img/logo/falkner-logo-horizontal.(webp\|png)` | Originalfarben quer – für helle Hintergründe |
+| `img/logo/falkner-logo-vertical(-light).(webp\|png)` | hochkant, Originalfarben bzw. hell |
+| `img/logo/falkner-grass-mark.png`, `icon-192.png`, `icon-512.png` | Grasmarke (Bildmarke) |
+| `favicon.ico` (16/32/48), `favicon-32.png`, `apple-touch-icon.png` (180) | Grasmarke dunkelgrün auf Creme – im `<head>` eingebunden |
+
+`favicon.svg` (alte Hornissen-Grafik) liegt noch im Repo, ist aber nicht mehr eingebunden.
 
 ## Eigene Fotos einsetzen
 
@@ -68,8 +91,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101f`, `js/main.js?v=20261101f`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101g`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101g`, `js/main.js?v=20261101g`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101h`).
 
 ## Eigene Domain
 
@@ -83,7 +106,7 @@ keine Daten an die Website übertragen. Fotos hängt der Besucher selbst an.
 
 ## Bildnachweis
 
-**Eigene Fotos und Videos** © [Firmenname]/Michael Falkner. Exif-/GPS-Daten und Video-Metadaten wurden beim
+**Eigene Fotos und Videos** © Falkner Schädlingsbekämpfung GmbH / Michael Falkner. Exif-/GPS-Daten und Video-Metadaten wurden beim
 Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (keine Orts-/Datumsangaben).
 
 | Datei | Verwendung | Original (Drive „Vespa Velutina“) |
