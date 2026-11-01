@@ -45,7 +45,7 @@ tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt web
 | USt-IdNr. | DE259876663 | Impressum, JSON-LD `vatID` |
 | Einsatzgebiet | Region Bonn / Rhein-Sieg / Köln und Region Mannheim / Rhein-Neckar | Leistungen, Über uns, Kontakt, Footer, JSON-LD `areaServed` – **bitte bestätigen** |
 
-Hinweis: `img/og-image.jpg` enthält noch den eingebrannten Text „KÖLN · BONN · RHEIN-SIEG“ (ohne Mannheim).
+Hinweis: `img/og-image.jpg` (Stand 01.11.2026) zeigt „BONN · KÖLN · RHEIN-SIEG · MANNHEIM · RHEIN-NECKAR“, den Firmennamen und die Domain.
 
 ## Platzhalter – noch offen
 
@@ -90,13 +90,24 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101j`, `js/main.js?v=20261101j`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101k`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101k`, `js/main.js?v=20261101k`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101l`).
 
 ## Eigene Domain
 
 Die Seite läuft unter `https://www.vespa-velutina.com/` (Datei `CNAME`). `canonical`, `og:url`, `og:image`,
-`logo`/`url`/`image` im JSON-LD zeigen auf diese Domain – bei einem Domainwechsel dort und in `CNAME` anpassen.
+`logo`/`url`/`image` im JSON-LD zeigen auf diese Domain – bei einem Domainwechsel dort, in `CNAME`, `robots.txt` und
+`sitemap.xml` anpassen.
+
+## SEO
+
+- `robots.txt` (alles erlaubt, Verweis auf die Sitemap) und `sitemap.xml` (eine URL, `lastmod` bei größeren Änderungen anpassen).
+- `<title>`, Meta-Description, H1 (inkl. Ortszeile) und H2 auf lokale Suchbegriffe ausgerichtet: Asiatische Hornisse entfernen
+  Bonn / Köln / Rhein-Sieg, Mannheim / Rhein-Neckar, Asiatische Hornisse melden, Hornissennest entfernen.
+- JSON-LD als `@graph`: `PestControl` (Hauptsitz Bonn) mit drei `department`-Standorten (Königswinter, Mannheim, Reilingen),
+  `WebSite` und `FAQPage`. **Die FAQPage-Texte müssen mit dem sichtbaren FAQ-Abschnitt (`#faq`) übereinstimmen** – bei Änderungen
+  beide Stellen anpassen.
+- Meldewege: NRW (Neobiota-Portal LANUK, Untere Naturschutzbehörde) und Baden-Württemberg (LUBW-Meldeplattform).
 
 ## Formular
 
