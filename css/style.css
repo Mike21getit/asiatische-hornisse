@@ -248,7 +248,7 @@ em { font-style: italic; }
   /* Desktop: Foto links, zur Textseite hin ausgeblendet */
   .hero-img {
     left: 0; right: auto; width: 60%;
-    object-position: 20% 50%;
+    object-position: 56% 48%;
     filter: brightness(.88) saturate(1.05);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 66%, transparent 100%);
             mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 66%, transparent 100%);
@@ -511,7 +511,7 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
 .faq-a a { color: var(--accent); }
 @media (min-width: 1281px) { .nav-cta-label { display: inline; } }
 @media (max-width: 899px) {
-  .hero-img { filter: brightness(.55); object-position: 40% 45%; }
+  .hero-img { filter: brightness(.6); object-position: 55% 40%; }
 }
 .facts--legal p { margin: 0; }
 @media (min-width: 900px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }

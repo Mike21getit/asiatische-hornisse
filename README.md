@@ -14,12 +14,12 @@ css/style.css           Handgeschriebenes CSS (mobile first)
 js/main.js              Navigation, Scrollspy, Einblend-Animationen, mailto-Anfrageformular
 fonts/                  Cormorant Garamond (SIL Open Font License), lokal eingebunden
 img/*.svg               Eigene Illustrationen (Hornissen, Nester, Hero)
-img/*.webp              Fotos (Wikimedia Commons, siehe „Bildnachweis“): hero-velutina(-1000), foto-velutina,
-                        foto-crabro
+img/hero-vespa-solo*.webp  Startbild (eigenes Foto, 2000 + 1000 px, quadratisch)
+img/foto-crabro.webp    Einziges verbliebenes Fremdfoto (Wikimedia Commons, siehe „Bildnachweis“)
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
 video/*.mp4             Eigene Videos (H.264, 720×1280, ohne Ton, Metadaten entfernt):
                         nest-badezimmer, nest-badezimmer-flugloch, nest-dachueberstand
-img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit Hero-Foto)
+img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit eigenem Hero-Foto vespa-solo)
 favicon.svg, favicon-32.png, apple-touch-icon.png
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
 tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt websocket-client)
@@ -65,8 +65,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101b`, `js/main.js?v=20261101b`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101b`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101c`, `js/main.js?v=20261101c`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101d`).
 
 ## Eigene Domain
 
@@ -85,6 +85,12 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 
 | Datei | Verwendung | Original (Drive „Vespa Velutina“) |
 |---|---|---|
+| `img/hero-vespa-solo.webp`, `img/hero-vespa-solo-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau (ersetzt Stockfoto Vassen) | vespa-solo.jpg |
+| `img/eigen-velutina.webp` | Erkennen – Fotovergleich Asiatische Hornisse (Ausschnitt, ersetzt Stockfoto Sharp) | velutina-01.jpg |
+| `img/eigen-velutina-nest(-800).webp` | Galerie – Asiatische Hornissen auf der Nesthülle | velutina-01.jpg |
+| `img/eigen-waben-hornissen(-800).webp` | Galerie – Hornissen auf einer Wabe | Wabe.jpg |
+| `img/eigen-waben-puppen(-800).webp` | Galerie – geöffnete Wabenetagen mit verdeckelten Zellen | Wabe-2.jpg |
+| `img/eigen-nest-fenster(-800).webp` | Galerie – Nest in einer Fensterlaibung | IMG_5958 2.JPG |
 | `img/eigen-nest-dachueberstand(-800).webp` | Nester – Fotopaar links (ersetzt Stockfoto Ithurburu) | IMG_9848 2.JPG |
 | `img/eigen-nest-baumkrone(-800).webp` | Nester – Fotopaar rechts | IMG_6398 2.JPG |
 | `img/eigen-nest-badezimmer(-800).webp` | Galerie – Nest an der Duschvorhangstange im Badezimmer | IMG_0266.jpg |
@@ -101,15 +107,13 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 Die Galerie nutzt die Lightbox der Fotografie-Seite (Tastatur ←/→/Esc, Wischen auf Touch-Geräten); neue Bilder
 einfach als weiteres `<li class="g-item">` in `#gallery` ergänzen (`href` = große Datei, `data-w`/`data-h`/`data-caption`).
 
-Weitere Fotos von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Alle wurden zugeschnitten, verkleinert und
-als WebP gespeichert; bearbeitete CC-BY-SA-Fassungen stehen unter derselben Lizenz. Der Nachweis steht auch auf
+Fremdfoto von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Es wurde zugeschnitten, verkleinert und
+als WebP gespeichert. Der Nachweis steht auch auf
 der Seite im Impressum unter „Bildnachweise“ (`#bildnachweise`) und als Kurzzeile an jedem Foto.
 **Wer ein Foto austauscht oder entfernt, muss den Nachweis an beiden Stellen anpassen.**
 
 | Datei | Verwendung | Original | Urheber | Lizenz |
 |---|---|---|---|---|
-| `img/hero-velutina.webp`, `img/hero-velutina-1000.webp`, `img/og-image.jpg` | Startbild, Social-Media-Vorschau | [Frelon asiatique (Vespa velutina), Parc de Woluwe, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_asiatique_(Vespa_velutina),_Parc_de_Woluwe,_Bruxelles_(53565592503).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
-| `img/foto-velutina.webp` | Erkennen – Fotovergleich | [Asian hornet (Vespa velutina)](https://commons.wikimedia.org/wiki/File:Asian_hornet_(Vespa_velutina).jpg) | Charles J. Sharp | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | `img/foto-crabro.webp` | Erkennen – Fotovergleich | [Frelon européen (Vespa crabo), Parc de Woluwé, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_europ%C3%A9en_(Vespa_crabro),_Parc_de_Woluw%C3%A9,_Bruxelles_(51791202897).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 
 Alle übrigen Illustrationen und Icons sind eigens erstellte SVGs (siehe `tools/make_svgs.py`). Schrift:
