@@ -15,7 +15,10 @@ js/main.js              Navigation, Scrollspy, Einblend-Animationen, mailto-Anfr
 fonts/                  Cormorant Garamond (SIL Open Font License), lokal eingebunden
 img/*.svg               Eigene Illustrationen (Hornissen, Nester, Hero)
 img/*.webp              Fotos (Wikimedia Commons, siehe „Bildnachweis“): hero-velutina(-1000), foto-velutina,
-                        foto-crabro, foto-nest-dach, foto-nest-baum
+                        foto-crabro, foto-nest-dach
+img/eigen-*.webp        Eigene Fotos (Michael Falkner): eigen-nest-badezimmer, eigen-hornissen-am-nest,
+                        eigen-flugloch (je 2000 px + -800), eigen-video-poster
+video/nest-badezimmer.mp4  Eigenes Video (H.264, 720×1280, 18 s, ohne Ton, Metadaten entfernt)
 img/og-image.jpg        Vorschaubild für Social Media (1200×630, mit Hero-Foto)
 favicon.svg, favicon-32.png, apple-touch-icon.png
 tools/make_svgs.py      Erzeugt die SVG-Illustrationen und das Favicon neu
@@ -44,8 +47,7 @@ Suchen mit: `grep -n '\[' index.html`
 | `[Maximale Arbeitshöhe / eigene Technik ergänzen]` | Leistungen → Einsätze in der Höhe | nur tatsächlich vorhandene Technik nennen |
 | `[Erreichbarkeit, z. B. Mo–Sa 8–18 Uhr]` | Kontakt | |
 | `[Bitte an die tatsächliche Praxis anpassen]` | Datenschutz, Abschnitt 5 | |
-| `[Eigene Fotos: © Firmenname]` | Impressum → Bildnachweis | nach Einbau eigener Fotos |
-| `[FOTO 1]`, `[FOTO 2]`, `[FOTO 3]`, `[FOTO INHABER]` | Ablauf, Über uns | siehe unten |
+| `[FOTO 3]`, `[FOTO INHABER]` | Ablauf, Über uns | siehe unten (FOTO 1 + 2 sind mit eigenen Fotos belegt) |
 
 Platzhalter in Attributen und Kopfbereich nicht vergessen: `<title>`, `meta description`, Open-Graph-Tags,
 JSON-LD (`<script type="application/ld+json">`), `tel:`/`mailto:`-Links, `data-mailto` am Formular.
@@ -63,7 +65,7 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261031c`, `js/main.js?v=20261031c`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101a`, `js/main.js?v=20261101a`).
 Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101a`).
 
 ## Eigene Domain
@@ -78,7 +80,17 @@ keine Daten an die Website übertragen. Fotos hängt der Besucher selbst an.
 
 ## Bildnachweis
 
-Fotos von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Alle wurden zugeschnitten, verkleinert und
+**Eigene Fotos und Video** © [Firmenname]/Michael Falkner (Einsatz „Nest im Badezimmer“). Exif-/GPS-Daten wurden
+beim Konvertieren entfernt.
+
+| Datei | Verwendung | Original |
+|---|---|---|
+| `img/eigen-nest-badezimmer(-800).webp` | Nester – Foto unter Sekundärnest (ersetzt das frühere Baumnest-Stockfoto) | IMG_0266.jpg |
+| `img/eigen-hornissen-am-nest(-800).webp` | Ablauf – Fotoplatz 1 | IMG_0275.jpg (16:9-Ausschnitt) |
+| `img/eigen-flugloch(-800).webp` | Ablauf – Fotoplatz 2 | vespa-01.jpg |
+| `video/nest-badezimmer.mp4`, `img/eigen-video-poster.webp` | Leistungen – „Einsatz aus unserer Praxis“ | IMG_0270.MP4 |
+
+Weitere Fotos von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Alle wurden zugeschnitten, verkleinert und
 als WebP gespeichert; bearbeitete CC-BY-SA-Fassungen stehen unter derselben Lizenz. Der Nachweis steht auch auf
 der Seite im Impressum unter „Bildnachweise“ (`#bildnachweise`) und als Kurzzeile an jedem Foto.
 **Wer ein Foto austauscht oder entfernt, muss den Nachweis an beiden Stellen anpassen.**
@@ -89,7 +101,6 @@ der Seite im Impressum unter „Bildnachweise“ (`#bildnachweise`) und als Kurz
 | `img/foto-velutina.webp` | Erkennen – Fotovergleich | [Asian hornet (Vespa velutina)](https://commons.wikimedia.org/wiki/File:Asian_hornet_(Vespa_velutina).jpg) | Charles J. Sharp | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | `img/foto-crabro.webp` | Erkennen – Fotovergleich | [Frelon européen (Vespa crabo), Parc de Woluwé, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_europ%C3%A9en_(Vespa_crabro),_Parc_de_Woluw%C3%A9,_Bruxelles_(51791202897).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 | `img/foto-nest-dach.webp` | Nester – unter Primärnest | [Vespa vélutina](https://commons.wikimedia.org/wiki/File:Vespa_v%C3%A9lutina.jpg) | Francis Ithurburu | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
-| `img/foto-nest-baum.webp` | Nester – unter Sekundärnest | [Vespa velutina nid](https://commons.wikimedia.org/wiki/File:Vespa_velutina_nid.jpg) | Fredciel | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
 Alle übrigen Illustrationen und Icons sind eigens erstellte SVGs (siehe `tools/make_svgs.py`). Schrift:
 Cormorant Garamond, SIL Open Font License, lokal gehostet. Keine externen Ressourcen, keine Cookies.
