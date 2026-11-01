@@ -702,8 +702,6 @@ td.hl::before { content: ""; display: inline-block; width: .5rem; height: .5rem;
 .equip-item--light { background: #fff; }
 .photo .equip-item img { aspect-ratio: 8 / 9; object-fit: cover; border: 0; transition: transform .6s var(--ease, ease); }
 .photo .equip-item--light img { object-fit: contain; padding: 6%; box-sizing: border-box; background: #fff; }
-.equip-item--white { background: #fff; }
-.photo .equip-item--white img { object-fit: contain; background: #fff; }
 .equip-item:hover img, .equip-item:focus-visible img { transform: scale(1.03); }
 .equip-label { position: absolute; left: .6rem; bottom: .6rem; padding: .35rem .6rem; background: rgba(10,10,11,.8); color: var(--accent); font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; line-height: 1.2; max-width: calc(100% - 1.2rem); }
 
