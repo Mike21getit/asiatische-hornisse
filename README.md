@@ -4,7 +4,7 @@ Statische One-Page-Website (HTML/CSS/JS, kein Framework, kein Backend) zur Entfe
 Asiatischen Hornisse (*Vespa velutina*). Layout und Typografie basieren auf der Fotografie-Website
 (`michaelfalkner-fotografie`), mit einem warmen Bernstein-Akzent.
 
-Live: https://mike21getit.github.io/asiatische-hornisse/
+Live: https://www.vespa-velutina.com/ (GitHub Pages, Custom Domain über `CNAME`; früher https://mike21getit.github.io/asiatische-hornisse/)
 
 ## Struktur
 
@@ -18,7 +18,7 @@ img/hero-velutina*.webp Startbild – TEST seit 01.11.2026 (eigenes Foto „velu
 img/hero-start*.webp    Bisheriges Startbild „start“ (2000 + 1000 px, 3:2) – bleibt für schnellen Rücktausch im Repo
 img/erkennen-crabro*.webp  Bild neben der Zeichnung der Europäischen Hornisse (Erkennen), KI-generiert (Drive „Vespa Crabo.JPG“), 1152 + 800 px
 img/hero-vespa-solo*.webp  Foto neben der Zeichnung der Asiatischen Hornisse (Erkennen), 2000 + 1000 px
-img/foto-crabro.webp    Einziges verbliebenes Fremdfoto (Wikimedia Commons, siehe „Bildnachweis“)
+img/crabro-01*.webp     Europäische Hornisse im Fotovergleich, KI-generiert (Drive „vespa crabro-01.jpg“), 90° gedreht, 4:3, 1536 + 800 px
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
 video/*.mp4             Eigene Videos (H.264 High, 1080×1920, CRF 21/24, faststart, ohne Ton, Metadaten entfernt):
                         nest-badezimmer, nest-badezimmer-flugloch, nest-fensterrahmen
@@ -90,13 +90,13 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101i`, `js/main.js?v=20261101i`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101j`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101j`, `js/main.js?v=20261101j`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101k`).
 
 ## Eigene Domain
 
-Bei Umzug auf eine eigene Domain `canonical`, `og:url`, `og:image` und `url` im JSON-LD anpassen
-(derzeit `https://mike21getit.github.io/asiatische-hornisse/`) und ggf. eine `CNAME`-Datei anlegen.
+Die Seite läuft unter `https://www.vespa-velutina.com/` (Datei `CNAME`). `canonical`, `og:url`, `og:image`,
+`logo`/`url`/`image` im JSON-LD zeigen auf diese Domain – bei einem Domainwechsel dort und in `CNAME` anpassen.
 
 ## Formular
 
@@ -135,14 +135,10 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 Die Galerie nutzt die Lightbox der Fotografie-Seite (Tastatur ←/→/Esc, Wischen auf Touch-Geräten); neue Bilder
 einfach als weiteres `<li class="g-item">` in `#gallery` ergänzen (`href` = große Datei, `data-w`/`data-h`/`data-caption`).
 
-Fremdfoto von Wikimedia Commons (frei lizenziert, Artbestimmung geprüft). Es wurde zugeschnitten, verkleinert und
-als WebP gespeichert. Der Nachweis steht auch auf
-der Seite im Impressum unter „Bildnachweise“ (`#bildnachweise`) und als Kurzzeile an jedem Foto.
-**Wer ein Foto austauscht oder entfernt, muss den Nachweis an beiden Stellen anpassen.**
-
-| Datei | Verwendung | Original | Urheber | Lizenz |
-|---|---|---|---|---|
-| `img/foto-crabro.webp` | Erkennen – Fotovergleich | [Frelon européen (Vespa crabo), Parc de Woluwé, Bruxelles](https://commons.wikimedia.org/wiki/File:Frelon_europ%C3%A9en_(Vespa_crabro),_Parc_de_Woluw%C3%A9,_Bruxelles_(51791202897).jpg) | Frank Vassen | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+Fremdfotos: keine mehr (das frühere Wikimedia-Commons-Foto wurde am 01.11.2026 durch `img/crabro-01*.webp` ersetzt).
+Beide Bilder der Europäischen Hornisse (`erkennen-crabro`, `crabro-01`) sind laut Metadaten KI-generiert und werden auf der
+Seite als „KI-generierte Darstellung, bereitgestellt von Falkner Schädlingsbekämpfung GmbH“ gekennzeichnet (Kurzzeile am Bild
+und Impressum → „Bildnachweise“). **Wer ein Bild austauscht, muss den Nachweis an beiden Stellen anpassen.**
 
 Alle übrigen Illustrationen und Icons sind eigens erstellte SVGs (siehe `tools/make_svgs.py`). Schrift:
 Cormorant Garamond, SIL Open Font License, lokal gehostet. Keine externen Ressourcen, keine Cookies.
