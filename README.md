@@ -38,6 +38,9 @@ tools/screenshot.py     Ganzseiten-Screenshot per Headless Chrome (benötigt web
 | Standort Mannheim | Neuhofer Straße 15, 68219 Mannheim · 0621 72492117 (`tel:+4962172492117`) | Hero, Kontakt, Impressum (Anschrift), Datenschutz (Verantwortlicher), JSON-LD |
 | E-Mail | mail@falkner-sbk.de | Kontakt, Formular (`data-mailto`/`action`), Impressum, Datenschutz, JSON-LD |
 | Hauptwebsite | https://www.falkner-sbk.de | Mobile-Menü, Über uns, Kontakt, Impressum, Footer, JSON-LD `sameAs` |
+| Sitz / Register | Sitz Bonn · Amtsgericht Bonn, HRB 16142 | Impressum |
+| Geschäftsführer | Dipl.-Wirtsch.-Ing. Michael Falkner | Impressum (Vertreten durch, § 18 MStV), Datenschutz, Über uns |
+| USt-IdNr. | DE259876663 | Impressum, JSON-LD `vatID` |
 | Einsatzgebiet | Region Bonn / Rhein-Sieg / Köln und Region Mannheim / Rhein-Neckar | Leistungen, Über uns, Kontakt, Footer, JSON-LD `areaServed` – **bitte bestätigen** |
 
 Hinweis: `img/og-image.jpg` enthält noch den eingebrannten Text „KÖLN · BONN · RHEIN-SIEG“ (ohne Mannheim).
@@ -49,15 +52,10 @@ Suchen mit: `grep -n 'class="ph"' index.html`
 
 | Platzhalter | Wo | Hinweis |
 |---|---|---|
-| `[Sitz der Gesellschaft bitte bestätigen …]` | Impressum | Anschrift ist vorläufig Mannheim; laut Handelsregister prüfen |
-| `[Geschäftsführer]` | Impressum (Vertreten durch), Datenschutz | Vor- und Nachname laut Handelsregister |
-| `[Geschäftsführer / verantwortliche Person]` | Impressum (§ 18 Abs. 2 MStV) | |
-| `[Registergericht …]`, `[HRB-Nummer]` | Impressum (Registereintrag) | Pflichtangabe für GmbH |
-| `[USt-IdNr.]` | Impressum | falls vorhanden |
-| `[je nach Sitz … LfDI BW … oder LDI NRW …]` | Datenschutz, Abschnitt Ihre Rechte | zuständige Aufsichtsbehörde nach Sitz wählen |
+| `[Straße Hausnummer]` (Bonn) | Impressum (Anschrift + § 18 MStV), Datenschutz (Verantwortlicher) | Straße des Sitzes in Bonn – folgt von Michael |
 | `[Name und Sitz des Versicherers …]` | Impressum (Berufshaftpflicht) | nur falls Pflicht/gewünscht |
 | `[Sachkunde / Zertifikate]` | Über uns | |
-| `[Kurzer Text zu Inhaber …]` | Über uns | |
+| `[Kurzer Text zu Erfahrung und Qualifikation …]` | Über uns | Geschäftsführer-Satz ist bereits eingetragen |
 | `[Maximale Arbeitshöhe / eigene Technik ergänzen]` | Leistungen → Einsätze in der Höhe | nur tatsächlich vorhandene Technik nennen |
 | `[Erreichbarkeit, z. B. Mo–Sa 8–18 Uhr]` | Kontakt | |
 | `[Bitte an die tatsächliche Praxis anpassen]` | Datenschutz, Abschnitt 5 | |
@@ -91,8 +89,8 @@ Nur Fotos verwenden, an denen Sie die Rechte haben (am besten eigene). Keine Sto
 
 ## Cache-Busting
 
-CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101g`, `js/main.js?v=20261101g`).
-Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101h`).
+CSS/JS werden mit `?v=…` eingebunden (`css/style.css?v=20261101h`, `js/main.js?v=20261101h`).
+Nach jeder Änderung an CSS/JS den Wert in `index.html` erhöhen (z. B. `20261101i`).
 
 ## Eigene Domain
 
