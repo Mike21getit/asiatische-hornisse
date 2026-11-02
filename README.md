@@ -57,7 +57,6 @@ Suchen mit: `grep -n 'class="ph"' index.html`
 | `[Name und Sitz des Versicherers …]` | Impressum (Berufshaftpflicht) | nur falls Pflicht/gewünscht |
 | `[Sachkunde / Zertifikate]` | Über uns | |
 | `[Kurzer Text zu Erfahrung und Qualifikation …]` | Über uns | Geschäftsführer-Satz ist bereits eingetragen |
-| `[Maximale Arbeitshöhe / eigene Technik ergänzen]` | Leistungen → Einsätze in der Höhe | nur tatsächlich vorhandene Technik nennen |
 | `[Erreichbarkeit, z. B. Mo–Sa 8–18 Uhr]` | Kontakt | |
 | `[Bitte an die tatsächliche Praxis anpassen]` | Datenschutz, Abschnitt 5 | |
 | `[FOTO 3]`, `[FOTO INHABER]` | Ablauf, Über uns | siehe unten (FOTO 1 + 2 sind mit eigenen Fotos belegt) |
