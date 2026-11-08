@@ -18,7 +18,7 @@ img/hero-velutina*.webp Startbild – TEST seit 01.11.2026 (eigenes Foto „velu
 img/hero-start*.webp    Bisheriges Startbild „start“ (2000 + 1000 px, 3:2) – bleibt für schnellen Rücktausch im Repo
 img/erkennen-crabro*.webp  Bild neben der Zeichnung der Europäischen Hornisse (Erkennen), KI-generiert (Drive „Vespa Crabo.JPG“), 1152 + 800 px
 img/hero-vespa-solo*.webp  Foto neben der Zeichnung der Asiatischen Hornisse (Erkennen), 2000 + 1000 px
-img/crabro-01*.webp     Europäische Hornisse im Fotovergleich, KI-generiert (Drive „vespa crabro-01.jpg“), 90° gedreht, 4:3, 1536 + 800 px
+img/eigen-crabro-02*.webp  Europäische Hornisse im Fotovergleich, eigenes Foto (Drive „hornisse-02.JPG“), 4:3, 1776 + 800 px
 img/eigen-*.webp        Eigene Fotos (Michael Falkner), je 2000 px (lange Kante) + -800; dazu 3 Video-Poster
 video/*.mp4             Eigene Videos (H.264 High, 1080×1920, CRF 21/24, faststart, ohne Ton, Metadaten entfernt):
                         nest-badezimmer, nest-badezimmer-flugloch, nest-fensterrahmen
@@ -136,6 +136,8 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-nest-offen-baum(-800).webp` | Galerie – Nest im Baum mit offener Hülle | IMG_6406.JPG |
 | `img/eigen-waben-wiese(-800).webp` | Galerie – geöffnetes Nest auf einer Wiese | IMG_6408 2.JPG |
 | `img/eigen-waben-boden(-800).webp` | Galerie – Wabenetagen am Boden | IMG_6401.JPG |
+| `img/eigen-crabro-02(-800).webp` | Erkennen – Fotovergleich Europäische Hornisse (ab 08.11.2026, ersetzt KI-Bild `crabro-01`) | hornisse-02.JPG |
+| `img/eigen-sekundaernest-02(-800).webp` | Galerie – Sekundärnest in einer Baumkrone | sekundärnest-02.JPG |
 | `img/eigen-hornissen-am-nest(-800).webp` | Ablauf – Fotoplatz 1 | IMG_0275.jpg (16:9-Ausschnitt) |
 | `img/eigen-flugloch(-800).webp` | Ablauf – Fotoplatz 2 | vespa-01.jpg |
 | `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 1 (18 s, 1080×1920, 10,9 MB, CRF 21) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
@@ -146,7 +148,7 @@ Die Galerie nutzt die Lightbox der Fotografie-Seite (Tastatur ←/→/Esc, Wisch
 einfach als weiteres `<li class="g-item">` in `#gallery` ergänzen (`href` = große Datei, `data-w`/`data-h`/`data-caption`).
 
 Fremdfotos: keine mehr (das frühere Wikimedia-Commons-Foto wurde am 01.11.2026 durch `img/crabro-01*.webp` ersetzt).
-Beide Bilder der Europäischen Hornisse (`erkennen-crabro`, `crabro-01`) sind laut Metadaten KI-generiert und werden auf der
+Das Bild neben der Zeichnung der Europäischen Hornisse (`erkennen-crabro`) ist laut Metadaten KI-generiert und wird auf der
 Seite als „KI-generierte Darstellung, bereitgestellt von Falkner Schädlingsbekämpfung GmbH“ gekennzeichnet (Kurzzeile am Bild
 und Impressum → „Bildnachweise“). **Wer ein Bild austauscht, muss den Nachweis an beiden Stellen anpassen.**
 
