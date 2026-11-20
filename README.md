@@ -54,7 +54,6 @@ Suchen mit: `grep -n 'class="ph"' index.html`
 
 | Platzhalter | Wo | Hinweis |
 |---|---|---|
-| `[Name und Sitz des Versicherers …]` | Impressum (Berufshaftpflicht) | nur falls Pflicht/gewünscht |
 | `[Sachkunde / Zertifikate]` | Über uns | |
 | `[Kurzer Text zu Erfahrung und Qualifikation …]` | Über uns | Geschäftsführer-Satz ist bereits eingetragen |
 | `[Erreichbarkeit, z. B. Mo–Sa 8–18 Uhr]` | Kontakt | |
