@@ -130,7 +130,9 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-waben-puppen(-800).webp` | Galerie – geöffnete Wabenetagen mit verdeckelten Zellen | Wabe-2.jpg |
 | `img/eigen-nest-fenster(-800).webp` | Galerie – Nest in einer Fensterlaibung | IMG_5958 2.JPG |
 | `img/eigen-nest-fensterrahmen(-800).webp` | Nester – Fotopaar links: Sekundärnest an einem Fensterrahmen (dasselbe Nest wie im Video `nest-fensterrahmen`; ersetzt Stockfoto Ithurburu) | IMG_9848 2.JPG |
-| `img/eigen-nest-baumkrone(-800).webp` | Nester – Fotopaar rechts | IMG_6398 2.JPG |
+| `img/eigen-velutina-nest-01(-800).webp` | Nester – Fotopaar rechts: Sekundärnest in einer Baumkrone (ab 20.11.2026, 3:4-Ausschnitt, 1152 + 600 px) | velutina-nest-01-web.jpg |
+| `img/eigen-nest-baumkrone(-800).webp` | Galerie – Nest hoch in einer kahlen Baumkrone (bis 20.11.2026 Nester – Fotopaar rechts) | IMG_6398 2.JPG |
+| `img/eigen-lanze(-800).webp` | Galerie – Teleskoplanze im Einsatz (ab 20.11.2026) | lanze-01.jpg |
 | `img/eigen-nest-badezimmer(-800).webp` | Galerie – Nest an der Duschvorhangstange im Badezimmer | IMG_0266.jpg |
 | `img/eigen-hornissen-nahaufnahme(-800).webp` | Galerie – Arbeiterinnen auf der Nesthülle | IMG_0275.jpg |
 | `img/eigen-nest-offen-baum(-800).webp` | Galerie – Nest im Baum mit offener Hülle | IMG_6406.JPG |
