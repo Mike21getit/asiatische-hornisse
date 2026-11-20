@@ -57,7 +57,6 @@ Suchen mit: `grep -n 'class="ph"' index.html`
 | `[Sachkunde / Zertifikate]` | Über uns | |
 | `[Kurzer Text zu Erfahrung und Qualifikation …]` | Über uns | Geschäftsführer-Satz ist bereits eingetragen |
 | `[Erreichbarkeit, z. B. Mo–Sa 8–18 Uhr]` | Kontakt | |
-| `[Bitte an die tatsächliche Praxis anpassen]` | Datenschutz, Abschnitt 5 | |
 | `[FOTO 3]`, `[FOTO INHABER]` | Ablauf, Über uns | siehe unten (FOTO 1 + 2 sind mit eigenen Fotos belegt) |
 
 Nach dem Ersetzen die Klasse `ph` am jeweiligen `<span>` entfernen (sonst bleibt der Text orange unterstrichen).
