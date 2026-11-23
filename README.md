@@ -138,6 +138,7 @@ Konvertieren entfernt. Bildunterschriften beschreiben nur, was zu sehen ist (kei
 | `img/eigen-waben-boden(-800).webp` | Galerie – Wabenetagen am Boden | IMG_6401.JPG |
 | `img/eigen-crabro-02(-800).webp` | Erkennen – Fotovergleich Europäische Hornisse (ab 08.11.2026, ersetzt KI-Bild `crabro-01`) | hornisse-02.JPG |
 | `img/eigen-sekundaernest-02(-800).webp` | Galerie – Sekundärnest in einer Baumkrone | sekundärnest-02.JPG |
+| `img/eigen-nest-glasueberdachung(-800).webp` | Galerie – Sekundärnest unter einer Glasüberdachung (ab 23.11.2026) | 5A4A3100-1-web.jpg |
 | `img/eigen-hornissen-am-nest(-800).webp` | Ablauf – Fotoplatz 1 | IMG_0275.jpg (16:9-Ausschnitt) |
 | `img/eigen-flugloch(-800).webp` | Ablauf – Fotoplatz 2 | vespa-01.jpg |
 | `video/nest-badezimmer.mp4` + `img/eigen-video-poster.webp` | Praxis-Block „Nest im Badezimmer“, Video 1 (18 s, 1080×1920, 10,9 MB, CRF 21) | IMG_0270.MP4 (inhaltsgleich mit „Automatic 3.MP4“) |
